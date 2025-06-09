@@ -1,12 +1,11 @@
-# React + Vite
+**Esercizio**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Dovrete utilizzare lo stato e `useEffect` per gestire il filtraggio dinamico.
+Per oggi diamo priorità alla logica e alla gestione dello stato. Una volta funzionante, possiamo pensare allo stile!
+Note
+- Il filtro deve funzionare dinamicamente quando l'utente seleziona un genere dalla `select`.
+- Se non viene selezionato alcun genere, devono essere mostrati tutti i film.
+BONUS:
+0. Creare la lista di generi dinamicamente partendo da array dei film
+1. Aggiungere un campo di ricerca per filtrare i film anche per titolo.
+2. Creare un sistema per aggiungere nuovi film alla lista tramite un form.
