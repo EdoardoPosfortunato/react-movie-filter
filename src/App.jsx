@@ -5,17 +5,19 @@ import './App.css'
 function App() {
 
   const [movieList, setmovieList] = useState(movies)
+  const [movieListFiltred, setmovieListFiltred] = useState(movieList)
   const [search, setsearch] = useState("")
 
   const handleInputChange = (event) => {
     setsearch(event.target.value)
   }
+
   useEffect(() => {
-    const filterListMovie = movies.filter((curMovie) =>
+    const filterListMovie = movieList.filter((curMovie) =>
       curMovie.title.includes(search)
     )
     console.log(filterListMovie)
-    setmovieList(filterListMovie)
+    setmovieListFiltred(filterListMovie)
 
   }, [search])
 
@@ -28,7 +30,7 @@ function App() {
         onChange={handleInputChange}
         type="text" />
       <ul>
-        {movieList.map((currMovie, index) =>
+        {movieListFiltred.map((currMovie, index) =>
           <li
             key={index}
           >{currMovie.title}</li>
